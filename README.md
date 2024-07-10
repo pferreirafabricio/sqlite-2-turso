@@ -4,11 +4,19 @@ A simple JS script to migrate a local SQLite database to a Turso database on the
 
 <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=8E562E">
 
-## Overview
+## 👀 Overview
 
-This project provides a straightforward JavaScript utility for migrating data from a local SQLite database to a Turso database hosted in the cloud. It leverages Node.js and a set of dependencies to facilitate the migration process, ensuring a seamless transition of data from a local storage mechanism to a scalable, cloud-based solution.
+![Screenshot_10](https://github.com/pferreirafabricio/sqlite-2-turso/assets/42717522/f57661dd-8dee-4150-9e3d-098afc2a405b)
+![Screenshot_11](https://github.com/pferreirafabricio/sqlite-2-turso/assets/42717522/5b79bdeb-7e46-45f5-b697-8f6bfea02992)
 
-## Features
+## 📖 About
+
+This project provides a straightforward JavaScript utility for migrating data from a local SQLite database to a Turso database hosted in the cloud. It leverages Node.js and a set of dependencies to facilitate the migration process, ensuring a seamless data transition from a local storage mechanism to a scalable, cloud-based solution.
+
+> [!NOTE]
+> The migration of tables happens in parallel. If the table was not found on Turso, we used the SQL in the [`database/initial-table-creation.js`](database/initial-table-creation.js) file to create it. If the the row already exists on Turso we update it with the local data.
+
+## ✨ Features
 
 - Easy configuration through environment variables.
 - Automated migration of tables and data.
@@ -16,7 +24,7 @@ This project provides a straightforward JavaScript utility for migrating data fr
 - Utilizes the `@libsql/client` for interacting with the Turso database.
 - Supports SQLite3 for local database interactions.
 
-## Getting Started
+## 🏄‍♂️ Getting Started
 
 ### Prerequisites
 
@@ -61,6 +69,6 @@ To start the migration process, run:
 npm run migrate
 ```
 
-## License
+## 📃 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
