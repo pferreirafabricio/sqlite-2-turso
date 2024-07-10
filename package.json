@@ -1,0 +1,28 @@
+{
+  "name": "sqlite-2-turso",
+  "version": "1.0.0",
+  "description": "A simple JS script to migrate a local SQLite database to a Turso database on the cloud",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "node index.js",
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "Fabrício Pinto Ferreira",
+    "email": "pferreirafabricio@gmail.com",
+    "url": "https://github.com/pferreirafabricio"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@libsql/client": "^0.7.0",
+    "dotenv": "^16.4.5",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0"
+  }
+}
